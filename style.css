@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(24, 28, 48);
+    width: 100%;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 6rem;
+    width: 100%;
+}
+
+.veo{
+    border: 2px solid red;
+}
+
+nav{
+    display: flex;
+    border: 1px solid yellow;
+    justify-content: space-around;
+}
+
+h2{
+    background-color: rgb(230, 221, 196);
+    border-radius: 0.5rem;
+    padding: 0.8rem;
+    font-size: 1rem;
+    font-weight: 400;
+    box-shadow: 0.1rem 0.2rem 0 rgb(103, 137, 131);
+}
+
+.afuera{
+    width: 30%;
+    height: 45%;
+    background-color: rgb(240, 233, 210);
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+}
+
+.adentro{
+    background-color: rgb(73, 85, 121);
+    width: 85%;
+    height: 65%;
+    border-radius: 0.2rem;
+}
+
+
+
+
+main{
+    width: 100vw;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo{
+    background-image: url(./assets/imagenes/codigo.jpg);
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 85vh;
+}
+
+h1{
+    color: #eeeeee;
+    font-size: 4rem;
+    text-shadow: 0.2rem 0.2rem 0 grey, 0.4rem 0.4rem 0 black;
+}
+
+h3{
+    font-size: 2.5rem;
+    color: rgb(103, 137, 131);  
+}
+
+.enlases{
+    height: 130vh;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.caja{
+    width: 30vw;
+    height: 80vh;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(230, 221, 196);
+    justify-content: space-between;
+    border: 0.5rem solid rgb(103, 137, 131);
+    box-sizing: content-box;
+}
+
+img{
+    width: 30vw;
+}
+
+a{
+    margin: 2rem;
+    height: 2rem;
+    width: 40%;
+    border-radius: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(24, 28, 48);
+    color: #eeeeee;
+    box-shadow: 0.1rem 0.2rem 0 rgb(103, 137, 131);
+}
+
+/*  --------------------------------
+    --------------------------------
+        ACA EMPIEZA EL FOOTER
+    --------------------------------
+    --------------------------------
+*/
+
+footer{
+    height: 30vh;
+    background-color: rgb(103, 137, 131);
+    width: 100%;
+}
+
+.f1{
+    width: 50%;
+    align-items: center;
+}
+
+.fi{
+    width: 7rem;
+    height: 4rem;
+    margin: 4rem;
+}
+
+h4{
+    font-size: 1rem;
+    text-align: center;
+}
+
+.f2{
+    width: 50%;
+    align-items: center;
+    justify-content: end;
+    margin-right: 2rem;
+}
+
+/*  -----------------------------------
+    -----------------------------------
+        ACA EMPIEZA HOJA 2
+    -----------------------------------
+    -----------------------------------
+*/
+
+.p2d1{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    text-align: center;
+}
+
+.h31{
+   
+}
+
+.p1{
+   
+}
+
+.p2{
+    
+}
+
+.h32{
+    
+}
+
+.h33{
+
+}
+
+.p3{
+   
+}
+
+.p2s2{
+    flex-direction: column;
+}
