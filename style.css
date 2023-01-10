@@ -2,73 +2,45 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style: none;
 }
 
 body{
     background-color: rgb(24, 28, 48);
-    width: 100%;
-}
-
-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 6rem;
-    width: 100%;
-}
-
-.veo{
-    border: 2px solid red;
 }
 
 nav{
     display: flex;
     border: 1px solid yellow;
     justify-content: space-around;
+    align-items: center;
+    height: 15vh;
 }
 
-h2{
+ul{
+    display: flex;
+    gap: 2.5rem;
+    align-items: center;
+}
+
+li{
+    height: 3.5rem;
+    width: 8rem;
+    display: flex;
     background-color: rgb(230, 221, 196);
     border-radius: 0.5rem;
-    padding: 0.8rem;
-    font-size: 1rem;
     font-weight: 400;
     box-shadow: 0.1rem 0.2rem 0 rgb(103, 137, 131);
 }
 
-.afuera{
-    width: 30%;
-    height: 45%;
-    background-color: rgb(240, 233, 210);
-    justify-content: center;
-    align-items: center;
-    border-radius: 0.5rem;
-}
-
-.adentro{
-    background-color: rgb(73, 85, 121);
-    width: 85%;
-    height: 65%;
-    border-radius: 0.2rem;
-}
-
-
-
-
-main{
-    width: 100vw;
-    flex-direction: column;
-    align-items: center;
-}
-
-.titulo{
+header{
+    height: 92vh;   
+    display: flex;
     background-image: url(./assets/imagenes/codigo.jpg);
+    background-attachment: fixed;
     background-size: cover;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 85vh;
 }
 
 h1{
@@ -77,27 +49,42 @@ h1{
     text-shadow: 0.2rem 0.2rem 0 grey, 0.4rem 0.4rem 0 black;
 }
 
+main{
+    display: flex;
+    flex-direction: column;
+}
+
 h3{
     font-size: 2.5rem;
     color: rgb(103, 137, 131);  
+    text-align: center;
 }
 
+/* 
+//-------------------------------------
+//----------PAGINA 1-------------------
+//------------------------------------- */
+
+
 .enlases{
+    display: flex;
     height: 130vh;
-    width: 100%;
     justify-content: space-around;
     align-items: center;
+    
 }
 
 .caja{
+    display: flex;
     width: 30vw;
     height: 80vh;
     flex-direction: column;
     align-items: center;
     background-color: rgb(230, 221, 196);
     justify-content: space-between;
-    border: 0.5rem solid rgb(103, 137, 131);
+    border: 0.4rem solid rgb(103, 137, 131);
     box-sizing: content-box;
+    text-align: center;
 }
 
 img{
@@ -124,12 +111,14 @@ a{
 */
 
 footer{
+    display: flex;
     height: 30vh;
     background-color: rgb(103, 137, 131);
     width: 100%;
 }
 
 .f1{
+    display: flex;
     width: 50%;
     align-items: center;
 }
@@ -146,6 +135,7 @@ h4{
 }
 
 .f2{
+    display: flex;
     width: 50%;
     align-items: center;
     justify-content: end;
