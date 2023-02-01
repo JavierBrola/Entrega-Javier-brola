@@ -5,19 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto-final</title>
+    <link rel="icon" type="image" href="./assets/imagenes/logo.png">
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+    <noscript>
+        <p>
+            La pagina requiere el uso de javascript para su mejor uso. 
+        </p>
+
+        <p>
+            Si fue deshabilidado intencionalmente , por favor vuelva a activarlo.
+        </p>
+    </noscript>
+    
     <nav>
         <a href="./index.html" id="asvg">
             <svg>
-                <rect x="50" y="8" width="70" height="35" rx="8" fill="rgb(240, 233, 210)" class="recgra"></rect>
+                <rect x="50" y="8" width="70" height="35" rx="8" fill="rgb(240, 233, 210)" class="imgra"></rect>
 
-                <rect x="54" y="12" width="62" height="27" rx="8" fill="rgb(73, 85, 121)" class="recchi"></rect>
+                <rect x="54" y="12" width="62" height="27" rx="8" fill="rgb(73, 85, 121)" class="imchi"></rect>
 
-                <polyline points="35 70,60 50,110 50, 140 70" fill="rgb(240, 233, 210)" class="polgra"></polyline>
+                <polyline points="35 70,60 50,110 50, 140 70" fill="rgb(240, 233, 210)" class="imgra"></polyline>
 
-                <polyline points="45 67,63 53,107 53, 130 67" fill="rgb(73, 85, 121)" class="polchi"></polyline>
+                <polyline points="45 67,63 53,107 53, 130 67" fill="rgb(73, 85, 121)" class="imchi"></polyline>
             </svg>
         </a>
 
@@ -48,32 +59,34 @@
         </h3>
 
         <section class="p3s1">
-            <div class="p3p divdes">
+            <div class="divdes">
                 Arrastre y suelte la imágenes aquí
             </div>
 
-            <div class="p3p divdes">
+            <div class="divdes">
                 Arrastre y suelte la imágenes aquí
             </div>
 
-            <div class="p3p divdes">
+            <div class="divdes">
                 Arrastre y suelte la imágenes aquí
             </div>
         </section>
 
         <section class="p3s2">
-            <img src="./assets/imagenes/rompe2.png" alt="" class="p3p imgarr">
+            <img src="./assets/imagenes/rompe2.png" alt="imagen del rompecabezas 2" class="imgarr img1">
 
-            <img src="./assets/imagenes/Rompe1.png" alt="" class="p3p imgarr">
+            <img src="./assets/imagenes/rompe1.png" alt="imagen del rompecabezas 1" class="imgarr">
 
-            <img src="./assets/imagenes/Rompe3.png" alt="" class="p3p imgarr">
+            <img src="./assets/imagenes/rompe3.png" alt="imagen del rompecabezas 3" class="imgarr">
         </section>
 
-        <button class="boton">
-            Reiniciar
-        </button>
+        <a href="#"> <!--USO "a" PARA QUE TOME LA PROPIEDAD DEL CSS PERO EL EVENTO ESTA POR JS -->
+            <button class="boton">
+                Reiniciar
+            </button>
+        </a>
     </main>
 
-    <script src="./script.js"></script>
+    <script src="./rompecabezas.js"></script>
 </body>
 </html>

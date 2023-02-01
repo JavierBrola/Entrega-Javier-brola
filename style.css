@@ -25,6 +25,7 @@ nav{
     height: 6rem;
     box-shadow: none;
     display: block;
+    transform: none;
 }
 
 ul, li{
@@ -50,6 +51,27 @@ header{
     align-items: center;
 }
 
+.imgra{
+    animation-name: bajar;
+    animation-duration: 3s;
+}
+
+.imchi{
+    animation-name: bajar;
+    animation-duration: 3s;
+    animation-delay: 0.1s;
+}
+
+@keyframes bajar {
+    0%{
+        transform: translateY(-6rem);
+        background-color: rgb(24, 28, 48);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
 h1{
     color: #eeeeee;
     font-size: 3.5rem;
@@ -61,7 +83,6 @@ h3{
     color: rgb(103, 137, 131);  
     text-align: center;
 }
-
 
 /* 
 //-------------------------------------
@@ -112,6 +133,11 @@ a{
     color: #eeeeee;
     text-decoration: none;
     box-shadow: 0.1rem 0.2rem 0 rgb(103, 137, 131);
+}
+
+a:active{
+    transform: translateY(0.2rem);
+    box-shadow: 0 0 0 transparent;
 }
 
 
@@ -225,18 +251,44 @@ video{
     background-color: white;
     align-items: center;
     gap: 1rem;
+    justify-content: space-around;
 }
 
 .botrep{
     display: flex;
     background-color: rgb(103, 137, 131);
-    width: 8vw;
-    height: 5vh;
+    width: 7vw;
+    height: 6vh;
     border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0.1rem 0.1rem 0rem black ;
 }
 
-.desaparece{
-    display: none;
+.botrep:active{
+    transform: translateY(0.1rem);
+    box-shadow: 0 0 0 transparent;
+}
+
+.isvg{
+    width: 5vw;
+    height: 3vh;
+}
+
+#tiempo{
+    width: 10%;
+    height: 6vh;
+    display: flex;
+    align-items: center;
+}
+
+.grande{
+    width: 100vw;
+    height: 100vh;
+}
+
+.expandir{
+    width: 80.1vw;
 }
 
 
@@ -261,7 +313,7 @@ video{
     gap: 0.2rem;
 }
 
-.p3p{
+.divdes{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -270,7 +322,6 @@ video{
     background-color: rgb(128,128,128);
     color: rgb(230, 221, 196);
 }
-
 
 .divdes:hover{
     background-color: #1d1d1d;
@@ -285,4 +336,10 @@ video{
     border-radius: 0.5rem;
     background-color: rgb(230, 221, 196);
     box-shadow: 0.1rem 0.2rem 0 rgb(103, 137, 131);
+    flex: 100%;
 }
+
+.desaparece{
+    display: none;
+}
+
